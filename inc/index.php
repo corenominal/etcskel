@@ -1,1 +1,0 @@
-<?php if ( ! defined( 'WPINC' ) ) { add_theme_support(  'post-thumbnails'  );; }?>

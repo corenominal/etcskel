@@ -1,17 +1,24 @@
-<?php if ( ! defined( 'WPINC' ) ) { add_theme_support(  'post-thumbnails'  );; }?>
+<?php if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }?>
 <?php get_header(); ?>
 
-<main>
-    <?php
-    while ( have_posts() ) :
-        the_post();
-    ?>
+<?php
+// Start the Loop
+while ( have_posts() ) :
+the_post();
+?>
 
-        <h1><?php the_title() ?></h1>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-        <?php the_content() ?>
+	<header class="entry-header">
+		<h1 class="entry-title"><?php the_title() ?></h1>
+	</header>
 
-    <?php endwhile; ?>
-</main>
+	<div class="entry-content">
+		<?php the_content() ?>
+	</div>
+
+</article><!-- #post-<?php the_ID(); ?> -->
+
+<?php endwhile; // End of the loop. ?>
 
 <?php get_footer(); ?>

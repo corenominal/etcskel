@@ -1,4 +1,4 @@
-<?php if ( ! defined( 'WPINC' ) ) { add_theme_support(  'post-thumbnails'  );; }
+<?php if ( ! defined( 'WPINC' ) ) { die('Direct access prohibited!'); }
 
 // Include all files in the functions directory
 foreach ( glob( get_template_directory() . '/functions/*.php' ) as $f )
