@@ -1,5 +1,5 @@
 
-![Logo](https://etcskel.wdbp.uk/wp-content/uploads/2021/09/etcskel-logo-96x96-round-v2.resized.png)
+![Logo](https://etcskel.corenominal.com/wp-content/uploads/2021/09/etcskel-logo-96x96-round-v2.resized.png)
 
     
 # etc/skel WordPress Theme
@@ -10,7 +10,7 @@ To be used as a starting point for developing your own WP themes.
 
 ## Demo
 
-[etecskel.wdbp.uk](https://etecskel.wdbp.uk)
+[etcskel.corenominal.com](https://etcskel.corenominal.com)
 
   
 ## Features

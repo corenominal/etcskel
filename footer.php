@@ -29,7 +29,7 @@
 	    <p>
 	    	&copy; <?php echo date( 'Y' ) ?> <?php bloginfo('name') ?>.
 	    <br>
-	    	WP theme by <a href="https://corenominal.org">corenominal</a>.
+	    	WP theme by <a href="https://corenominal.com">corenominal</a>.
 	    </p>
 	
 	</footer><!-- #colophon -->
