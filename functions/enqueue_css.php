@@ -6,12 +6,12 @@ function etcskel_queue_css()
 	$dir = get_template_directory_uri();
 
     // Load main css file
-    wp_enqueue_script( 'main_css', $dir . '/assets/css/main.css', array(), false );
+    wp_enqueue_style( 'main_css', $dir . '/assets/css/main.css', array(), false );
 
     // Example how to conditionally load css file based on page template
     // if( is_page_template( 'page_example.php' ) )
     // {
-    //     wp_enqueue_script( 'page_example_css', $dir . '/assets/css/example.css', array(), false );
+    //     wp_enqueue_style( 'page_example_css', $dir . '/assets/css/example.css', array(), false );
     // }
 
     /**
@@ -23,7 +23,7 @@ function etcskel_queue_css()
     //     $name = rtrim( basename( get_page_template() ), '.php' );
     //     if( file_exists( get_template_directory() . '/assets/css/' . $name . '.css' ) )
     //     {
-    //         wp_enqueue_script( $name . '_css', $dir . '/assets/css/' . $name . '.css', array(), false );
+    //         wp_enqueue_style( $name . '_css', $dir . '/assets/css/' . $name . '.css', array(), false );
     //     }
     // }
 
