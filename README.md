@@ -1,5 +1,5 @@
 
-![Logo](https://etcskel.corenominal.com/wp-content/uploads/2021/09/etcskel-logo-96x96-round-v2.resized.png)
+![Logo](https://etcskel.corenominal.com/wp-content/uploads/2022/04/etcskel-logo-twemoji-1.png)
 
     
 # etc/skel WordPress Theme
