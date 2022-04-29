@@ -53,6 +53,9 @@ That said, a few basic features have been included to help prevent repetitive ta
 ## Acknowledgements
 
  - [WordPress.org](https://wordpress.org)
+ - [Twemoji](https://twemoji.twitter.com)
+
+
 ## Contributing
 
 Contributions are always welcome!
