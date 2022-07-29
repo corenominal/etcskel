@@ -60,3 +60,6 @@ add_theme_support( 'align-wide' );
 
 // Add support for responsive embedded content.
 add_theme_support( 'responsive-embeds' );
+
+// Add support for page excerpts
+add_post_type_support( 'page', 'excerpt' );
