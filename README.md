@@ -43,6 +43,7 @@ That said, a few basic features have been included to help prevent repetitive ta
   - wp-block-styles
   - align-wide
   - responsive-embeds
+- Optional Sass directory within assets directory to get you up and running quickly
 
   
 ## Authors
