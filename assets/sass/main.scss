@@ -2,7 +2,7 @@
 
 // Eric Meyer's classic CSS reset with additional
 // * box-sizing: border-box rule
-//@use "reset";
+//@forward "reset";
 
-@use "html";
-@use "body";
+@forward "html";
+@forward "body";
