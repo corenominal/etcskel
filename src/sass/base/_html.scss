@@ -1,0 +1,6 @@
+@use '../abstracts/vars' as *;
+
+html {
+    background: $color-html-background;
+    padding: 20px;
+}

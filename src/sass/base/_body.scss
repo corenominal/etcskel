@@ -1,0 +1,12 @@
+@use '../abstracts/vars' as *;
+
+body {
+    background: $color-body-background;
+    color: $color-body-foreground;
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+
+    max-width: 750px;
+    margin: auto;
+    padding: 20px;
+}

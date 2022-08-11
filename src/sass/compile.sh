@@ -6,6 +6,6 @@
 # there are no external dependencies and nothing else you need to install. 
 # See: https://github.com/sass/dart-sass/releases
 
-sass -w main.scss ../css/main.css
+sass -w main.scss ../../assets/css/main.css
 
 exit
