@@ -1,0 +1,20 @@
+{
+  "name": "etcskel",
+  "version": "0.0.1",
+  "description": "A skeleton theme for WordPress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philip Newborough",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-dart-sass": "^2.0.1",
+    "sass": "^1.54.4"
+  }
+}
