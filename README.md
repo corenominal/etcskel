@@ -4,8 +4,8 @@
     
 # etc/skel WordPress Theme
 
-A non-opinionated skeleton theme for WordPress. 
-To be used as a starting point for developing your own WP themes.
+etc/skel is a skeleton theme for WordPress. 
+It is designed to be used as a starting point for developing your own WP themes. 
 
 
 ## Demo
@@ -43,7 +43,7 @@ That said, a few basic features have been included to help prevent repetitive ta
   - wp-block-styles
   - align-wide
   - responsive-embeds
-- Optional Sass directory within assets directory to get you up and running quickly
+- Optional [Grunt](https://gruntjs.com/) task runner set-up provided within the utils directory to get you up and running quickly with a build system
 
   
 ## Authors
