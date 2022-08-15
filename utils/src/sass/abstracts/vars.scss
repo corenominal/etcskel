@@ -2,6 +2,47 @@ $color-html-background: #eee;
 $color-body-background: white;
 $color-body-foreground: black;
 $color-primary: rgb(29, 155, 240);
+$color-border: rgb(213,207,203);
 
-$font-family-default: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+// // Some colours
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+$color-dark: rgb(30, 30, 30);
+$color-muted: lighten($color-dark, 30);
+$color-light: rgb(246, 245, 244);
+$color-blue: rgb(0, 123, 255);
+$color-pink: rgb(191, 54, 106);
+$color-red: rgb(201, 82, 92);
+$color-green: rgb(48, 169, 79);
+$color-yellow: rgb(255, 238, 100);
+$color-orange: rgb(209, 106, 0);
+$color-purple: rgb(94, 56, 140);
+$color-border: rgb(213,207,203);
+$color-berry: rgb(168, 47, 136);
+
+$font-family-sans: "Liberation Sans",Arial,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$font-family-monospace: "Liberation Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Courier New",monospace;
+$font-family-serif: Georgia, serif;
+
+$font-family-default: $font-family-sans;
 $font-size-default: 1.5rem;
+$font-size-sm: 1.6rem;
+$font-size-lg: 2.4rem;
+
+$line-height-body: 1.5;
+
+$border-radius-default: 0.4rem;
+$border-radius-large: 1.2rem;
+
+// Forms
+$form_border_width: 0.1px;
+$form_border_color: $color-border;
+$form_border_radius: $border-radius-default;
+$form_color_text: $color-body-foreground;
+$form_spacing_unit: 1rem;
+$form_font_size: inherit;
+$form_label_weight: 700;
+$form_spacing_unit: 1rem;
+$form_spacing_vertical: 3rem;
+$form_spacing_horizontal: 3rem;
+$form_color_ranged: $color-pink;

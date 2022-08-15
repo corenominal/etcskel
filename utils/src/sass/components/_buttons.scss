@@ -1,0 +1,39 @@
+@use '../abstracts/vars' as *;
+
+button,
+input[type="submit"],
+input[type="reset"],
+.btn,
+a.btn {
+	display: inline-block;
+	padding: $form_spacing_unit;
+	line-height: $line-height-body;
+	cursor: pointer;
+	border-radius: $border-radius-default;
+    border: 1px solid $color-border;
+	font-family: $font-family-sans;
+	font-size: inherit;
+	-webkit-appearance: none;
+	font-weight: 400;
+    background: darken($color-light, 3);
+    box-shadow: inset 1px 1px $color-white;
+    color: $color-body-foreground !important;
+    text-decoration: none;
+
+    &:hover {
+        background: darken($color-light, 1);
+        color: $color-body-foreground;
+    }
+
+    &:active {
+		background: darken($color-light, 10);
+        box-shadow: none;
+        color: $color-body-foreground;
+        outline: none;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   background: #eee;
   padding: 20px;
@@ -6,7 +12,7 @@ html {
 body {
   background: white;
   color: black;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Liberation Sans", Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
   max-width: 750px;
   margin: auto;
@@ -20,6 +26,377 @@ body a {
 }
 body a:hover {
   color: #0e80cc;
+}
+
+button,
+input[type=submit],
+input[type=reset],
+.btn,
+a.btn {
+  display: inline-block;
+  padding: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(213, 207, 203);
+  font-family: "Liberation Sans", Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: inherit;
+  -webkit-appearance: none;
+  font-weight: 400;
+  background: #efedec;
+  box-shadow: inset 1px 1px rgb(255, 255, 255);
+  color: black !important;
+  text-decoration: none;
+}
+button:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+.btn:hover,
+a.btn:hover {
+  background: #f4f2f1;
+  color: black;
+}
+button:active,
+input[type=submit]:active,
+input[type=reset]:active,
+.btn:active,
+a.btn:active {
+  background: #dfdcd8;
+  box-shadow: none;
+  color: black;
+  outline: none;
+}
+button:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled,
+.btn:disabled,
+a.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+  font-size: inherit;
+  font-family: "Liberation Sans", Arial, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: 0.1px solid rgb(213, 207, 203);
+  border-radius: 0.4rem;
+  color: black;
+  line-height: 1.5;
+  padding: 1rem;
+  margin: 0 2px;
+  max-width: 100%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=color]:focus,
+textarea:focus {
+  color: black;
+}
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=url]:disabled,
+input[type=password]:disabled,
+input[type=search]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+input[type=date]:disabled,
+input[type=month]:disabled,
+input[type=week]:disabled,
+input[type=time]:disabled,
+input[type=datetime]:disabled,
+input[type=datetime-local]:disabled,
+input[type=color]:disabled,
+textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input[type=color] {
+  -webkit-appearance: none;
+  border: none;
+  padding: 0;
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+}
+
+input[type=email],
+input[type=url] {
+  /*rtl:ignore*/
+  direction: ltr;
+}
+
+select {
+  font-size: inherit;
+  border: 0.1px solid rgb(213, 207, 203);
+  color: black;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1.5;
+  padding: 1rem;
+  background: rgb(255, 255, 255) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='%2328303d'><polygon points='0,0 10,0 5,5'/></svg>") no-repeat;
+  background-position: right 1rem top 60%;
+  border-radius: 0.4rem;
+}
+select:focus {
+  outline-offset: 0px;
+  outline: 4px solid rgb(255, 238, 100);
+}
+
+label {
+  font-size: inherit;
+  font-weight: 700;
+  margin-bottom: calc( 3rem / 3 );
+}
+
+/**
+https://css-tricks.com/custom-styling-form-inputs-with-modern-css-features/
+https://codepen.io/aaroniker/pen/ZEYoxEY by Aaron Iker.
+License: MIT.
+*/
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type=checkbox],
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 0.1px solid rgb(213, 207, 203);
+    background: rgb(255, 255, 255);
+  }
+  input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+    opacity: 0.5;
+  }
+  input[type=checkbox]:focus {
+    outline-offset: 0px;
+    outline: 4px solid rgb(255, 238, 100);
+  }
+  input[type=checkbox]:after {
+    content: "";
+    opacity: 0;
+    display: block;
+    left: 5px;
+    top: 2px;
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    border: 3px solid rgb(191, 54, 106);
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(30deg);
+  }
+  input[type=checkbox]:checked {
+    color: black;
+  }
+  input[type=checkbox]:checked:after {
+    opacity: 1;
+  }
+  input[type=radio] {
+    border-radius: 50%;
+  }
+  input[type=radio]:focus {
+    outline-offset: 0px;
+    outline: 4px solid rgb(255, 238, 100);
+  }
+  input[type=radio]:after {
+    content: "";
+    opacity: 0;
+    display: block;
+    left: 3px;
+    top: 3px;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgb(191, 54, 106);
+  }
+  input[type=radio]:checked {
+    border: 4px solid black;
+  }
+  input[type=radio]:checked:after {
+    opacity: 1;
+  }
+  input[type=radio]:checked:focus {
+    outline-offset: 0px;
+    outline: 4px solid rgb(255, 238, 100);
+  }
+}
+input[type=checkbox] + label,
+input[type=radio] + label {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: inherit;
+  vertical-align: top;
+}
+
+/**
+ * https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+*/
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    height: 6px;
+    background: rgb(191, 54, 106);
+    border-radius: 6px;
+    outline-offset: 10px;
+  }
+  input[type=range]:disabled {
+    opacity: 0.7;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid rgb(191, 54, 106);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    border: 3px solid rgb(191, 54, 106);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 6px;
+  border-width: 19px 0;
+  border-color: white;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: rgb(191, 54, 106);
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: rgb(191, 54, 106);
+  border-radius: 6px;
+}
+
+input[type=range]::-ms-thumb {
+  border: 3px solid rgb(191, 54, 106);
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+fieldset {
+  display: grid;
+  border-color: rgb(213, 207, 203);
+  padding: 3rem;
+}
+fieldset legend {
+  font-size: 2.4rem;
+}
+fieldset input[type=submit] {
+  max-width: max-content;
+}
+fieldset input:not([type=submit]) {
+  margin-bottom: 1rem;
+}
+fieldset input[type=radio], fieldset input[type=checkbox] {
+  margin-bottom: 0;
+}
+fieldset input[type=radio] + label, fieldset input[type=checkbox] + label {
+  font-size: inherit;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+.post-password-message {
+  font-size: 2.4rem;
+}
+
+.post-password-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-password-form__label {
+  width: 100%;
+  margin-bottom: 0;
+}
+.post-password-form input[type=password] {
+  flex-grow: 1;
+  margin-top: calc(3rem / 3);
+  margin-right: calc(0.66 * 3rem);
+}
+.post-password-form__submit {
+  margin-top: calc(3rem / 3);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.search-form .search-input {
+  width: 100%;
+}
+.search-form input[type=submit] {
+  display: none;
+}
+
+.comments label {
+  display: block;
+  margin: 2rem 0 0.6rem 0;
+}
+.comments .comment-form-cookies-consent label {
+  display: inline;
+}
+.comments input[type=submit] {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
